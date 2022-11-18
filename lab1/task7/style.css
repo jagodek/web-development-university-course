@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-around;
+}
+.gallery-element {
+  display: inline-block;
+  box-shadow: 11px 3px 10px #000;
+  margin-bottom: 40px;
+  flex-basis: 20%;
+  margin-right: 40px;
+}
+.gallery-element img {
+  display: block;
+}
+.caption {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 20px;
+}
+.caption div {
+  flex-grow: 1;
+  width: 0;
+}

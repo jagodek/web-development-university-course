@@ -1,0 +1,52 @@
+body {
+	font: 62.5% Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 20px;
+}
+ul{
+  display: flex;
+  list-style-type: none;
+
+}
+ul>*{
+  flex-basis: 10%;
+}
+li{
+  background-color: #E7E7E7;
+}
+li:hover{
+  background-color: #B2F511;
+}
+
+li:hover a::before {
+  content: url("images/go.png");
+  vertical-align: baseline;
+}
+a img{
+  vertical-align: middle;
+}
+li:hover img{
+  display: none;
+}
+a{
+  float: none;
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+
+}
+
+li:hover a{
+  font-weight: 600;
+  
+}
+
+@media screen and (  max-width: 800px) {
+  ul{
+    flex-flow: column;
+  }
+
+}
