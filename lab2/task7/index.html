@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 7</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        body{
+            height: 200vh;
+        }
+        #VideoCall{
+            position: relative;
+        }
+        #other_caller{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 2;
+        }
+        #caller{
+            max-width: 100%;
+        }
+        .material-icons {
+            padding: 10px;
+            border-radius: 50%;
+        }
+        .white_icon{
+            background-color: white;
+            color: #0aa;
+        }
+        #call_end{
+            color: #ffffff;
+            background-color: #f00;
+        }
+
+        #flex-wrapper {
+            border-radius: 10px;
+            background-color: #0aa;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #call-control {
+            display: flex;
+            position: absolute;
+            bottom: 30px;
+            width: 150px;
+            justify-content: space-between;
+        }
+
+        @media screen and (max-width:900px){
+            
+        }
+
+    
+
+    </style>
+</head>
+
+<body>
+    <div id="VideoCall">
+        <img id="other_caller" src="https://picsum.photos/id/582/150/180" alt="ooops">
+        <div id="flex-wrapper">
+            <img id="caller" src="https://picsum.photos/id/1062/500/800" alt="">     
+            <div id="call-control">
+                <a href="#"><span class="material-icons white_icon">mic_none</span></a>
+                <a href="#"><span class="material-icons white_icon">face</span></a>
+                <a href="#"><span class="material-icons" id="call_end">call_end</span></a>
+            </div>
+        </div>
+        <div id="volume">
+            
+        </div>
+    </div>
+</body>
+
+</html>

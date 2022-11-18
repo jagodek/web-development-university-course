@@ -1,0 +1,100 @@
+        @keyframes begin1 {
+            from {
+                transform: translateX(-500px);}
+            to { 
+                transform: translateX(0);}
+        }
+        @keyframes begin2 {
+            from {transform: translateX(-1000px);}
+            to {transform: translateX(0);}
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        header{
+            background: linear-gradient(175deg,#06f 320px, #0066ff 49.9%, #fff 50%);
+            min-height: 100vh;
+            display: flex;
+            padding: 50px;
+            justify-content: flex-start;
+        }
+        h1{
+            font-weight: 100;
+        }
+        article
+        {
+            animation-name: begin1;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            color: #fff;
+        }
+        article > * {
+            margin-bottom: 20px;
+        }
+        article p{
+            width: 80%;
+            max-width: 40em;
+        }
+        a{
+            display: inline-block;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 10px;
+            text-decoration: none;
+        }
+        input{
+            border: none;
+            font-size: 1.1em;
+            padding: 0.5em;
+        }
+        input[type="text"],input[type="email"]{
+            border-bottom: 1px solid #555;
+            padding-left: 0;
+        }
+        input[type="submit"]{
+            margin-top: 20px;
+            background-color: #06f;
+            color:#fff;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        input:focus{
+            outline: none;
+        }
+        form{
+            animation-name: begin2;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 15px;
+            box-shadow: 2px 2px 5px #555,-2px 2px 5px #555;
+        }
+        form > *{
+            margin-bottom: 10px;
+        }
+        h3{
+            font-weight: 200;
+            color: #444;
+        }
+
+        @keyframes flex-change {
+            from {transform: translate(0,0);}
+            to {transform: translate(0,0)}
+        }
+
+        @media screen and (max-width:800px){
+            header{
+                flex-direction: column;
+            }
+            form{
+                animation-name: flex-change;
+                margin-top: 3em;
+                max-width: 20em;
+            }
+        }

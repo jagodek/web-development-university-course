@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    padding: 10px;
+}
+header{
+    display: flex;
+    background-color: rgb(46, 46, 46);
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+#nav-div{
+    width: 80%;
+    max-width: 50em;
+    margin-top: 10px;
+}
+#logo-div{
+    color: white;
+}
+#nav-div ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+#nav-div li{
+    font-variant-caps: all-petite-caps;
+}
+#nav-div a{
+    text-decoration: none;
+    color: gold;
+    font-size: 28px;
+}
+#pseudobutton{
+    display: none;
+}
+header input{
+    display: none;
+}
+
+
+
+@media screen and (max-width:800px){
+    header{
+        flex-direction:column;
+        align-items: stretch;
+        padding-left: 20px;
+    }
+
+    #nav-div ul{
+        flex-direction: column;
+    }
+
+    #nav-div li{
+        padding: 5px;
+    }
+
+    #nav-div{
+        transform: translateY(-300px);
+        transition: all .2s linear ;
+        max-height: 0;
+        height: auto;
+        
+    }
+    header input:checked ~ #nav-div{
+            transform: translateY(0);
+            
+            max-height: 300px;
+        }
+    
+
+    header input{
+        display: block;
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        top: 10px;
+        right: 10px;
+        z-index: 1;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+
+    
+    #pseudobutton{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #dfb700;
+        width: 50px;
+        height: 50px;
+
+    }
+    #flex-container{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    #bar{
+        width: 40px;
+        height: 6px;
+        background-color: white;
+        transition: all .5s ease-in-out;
+    }
+    #bar::before, #bar::after{
+        content:'';
+        position: absolute;
+        width: 40px;
+        background-color: white;
+        height: 6px;
+        transition: all .5s ease-in-out;
+
+    }
+    #bar::before{
+        transform: translateY(-16px);
+    }
+    #bar::after{
+        transform: translateY(16px);
+    }
+
+    header input:checked ~#pseudobutton #bar{
+        transform: translateX(-50px);
+        background-color: transparent;
+        
+    }
+    header input:checked ~#pseudobutton #bar::before{
+        transform: rotate(45deg) translate(35px, -35px);
+
+    }
+    header input:checked ~#pseudobutton #bar::after{
+        transform: rotate(-45deg) translate(35px, 35px);
+        
+    }
+}
