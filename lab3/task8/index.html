@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+    <title>Zadanie 8</title>
+    <style>
+        .material-icons-outlined{
+            line-height: 0.5em;
+            user-select: none;
+        }
+        #container{
+            display: flex;
+            flex-direction: column;
+            padding: 2em;
+            align-items: flex-start;
+        }
+        #container>div{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 1em;
+        }
+        .field{
+            position: relative;
+            display: inline-block;
+            background-color: red;
+        }
+        .field span{
+            position: absolute;
+            right: 0;
+            padding: 0.5em;
+           
+            cursor: pointer;
+
+        }
+        input{
+            padding: 0.5em;
+        }
+    </style>
+</head>
+<body> 
+    <div id="container">
+        <div id="newContainer">
+            <label for="new">new password</label>
+            <div class="field">
+                <input type="text" name="new"  autocomplete="off" id="new">
+                <span class="material-icons-outlined">
+                    visibility
+                    </span>
+            </div>
+        </div>
+        <div id="repeatContainer">
+            
+            <label for="repeat">repeat password</label>
+            <div class="field">
+                <input type="text" name="repeat" autocomplete="off" id="repeat">
+                <span class="material-icons-outlined">
+                    visibility
+                    </span>
+            </div>
+        </div>
+        <div id="conditionContainer">
+            <h3>password requirements</h3>
+            <p id="char"><span class="negative material-icons-outlined"></span>at least 8 characters</p>
+            <p id="spec"><span class="negative material-icons-outlined"></span>at least one special characters</p>
+            <p id="cap"><span class="negative material-icons-outlined"></span>at least one capital letter</p>
+            <p id="dig"><span class="negative material-icons-outlined"></span>at least one digit</p>
+            <p id="rep"><span class="negative material-icons-outlined"></span>repeat password</p>
+        </div>
+    </div>
+    
+</body>
+</html>

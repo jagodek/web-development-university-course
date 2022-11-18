@@ -1,0 +1,45 @@
+
+:root{
+    --x1:0;
+    --x2:0;
+    --y1:0;
+    --y2:0;
+}
+#container{
+    display: inline-block;
+    position: relative;
+}
+#box{
+    position: relative;
+    width: 800px;
+    height: 300px;
+    border: 2px solid #000;
+}
+@keyframes move {
+    from{left:var(--x1);
+        top:var(--y1)}
+    to{left:var(--x2);
+            top:var(--y2)}
+}
+#ball{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #e33;
+    border-radius: 50%;
+    transition: left 1s;
+    transition: right 1s;
+    left: var(--x1);
+    top:var(--y1);
+    transition-duration: 1s;
+}
+.animate{
+    animation: move 1s linear;
+}
+p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}

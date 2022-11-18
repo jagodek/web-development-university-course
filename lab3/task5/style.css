@@ -1,0 +1,30 @@
+*{
+    font-size: 34px;
+}
+#blue{
+    background-color:#00aaee;
+    width: 16em;
+}
+#red{
+    background-color:#ff302e;
+    width: 8em;
+}
+#yellow{
+    background-color:#fafa33;
+    width: 4em;
+}
+.box{
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1em;
+}
+button{
+    padding: 0.5em;
+    font-size: 0.5em;
+    margin: 0.5em;
+    border: none;
+}

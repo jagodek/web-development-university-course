@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: #eee;
+}
+#mainContainer{
+    position: relative;
+    height: 100%;
+    width: 90%;
+    margin-left: auto ;
+    margin-right: auto ;
+    padding-top: 2em;
+}
+
+
+#listContainer{
+    position: relative;
+    max-width: 900px;
+    height: 75vh;
+    overflow: scroll;
+}
+.contact{
+    display: flex;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    min-height: 5em;
+    background-color: antiquewhite;
+    box-shadow: 5px 5px 5px #888;
+
+}
+.contact h4{
+    margin: 0.5em;
+}
+.contact p{
+    margin: 0.5em;
+}
+
+
+#addContact{
+    bottom: 1em;
+    max-width: 900px;
+
+    width: 100%;
+    padding: 0.5em;
+    background-color: #ddd;
+    box-shadow: 5px 5px 5px #333;
+}
+#flexContact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+#flexContact>div{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+    width: 40%;
+}
+#addContact input{
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: none;
+
+}
+
+.error{
+    color: red;
+    min-height: 1.2em;
+}
+
+
+button{
+    position: absolute;
+    font-size: 40px;
+    width: 1.5em;
+    height: 1.5em;
+    right: 0.5em;
+}

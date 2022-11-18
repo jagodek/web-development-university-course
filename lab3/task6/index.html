@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 6</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+   
+</head>
+<!-- 
+Napisz skrypt, w którym za pomocą przycisk Dodaj będzie dodawał nowa pozycje 
+do książki telefonicznej (imię, nr telefonu). Dane podajemy za pomocą formularza.  Dodawana 
+pozycja zawiera również przycisk (w formie ikony – kosz) pozwalający na usuwanie elementy 
+z książki adresowej. Wymagana jest walidacja wprowadzanych wartości tak aby numer 
+telefonu to były tylko cyfry w formacie 9  lub  12 cyfr ewentualnie zaczynające się znakiem + 
+np. +048 123456789. Znaki  mogą być porozdzielane spacjami lub innymi białymi znakami – 
+format 12 34 56 78 9   ,   lub 1234  56789 jest poprawny.  Imię i Nazwisko musi rozpoczynać 
+się od dużej litery i zawierać tylko litery w dowolnym alfabecie + ‘-‘  (cyfry i inne znaki specjalne 
+wykluczone). Dozwolone są nazwiska dwuczłonowe. Przykład poniżej.  -->
+<body>
+    <div id="mainContainer">
+        <div id="listContainer">
+
+        </div>
+        <div id="addFlex">
+            <div id="addContact">
+                <div id="flexContact">
+                    <div>
+                        <label for="name">Imię i Nazwisko</label>
+                        <input type="text" autocomplete="off" id="name"> 
+                        <div class="error"></div>
+                    </div>          
+                    <div>
+                        <label for="number">Numer telefonu</label>
+                        <input type="text" autocomplete="off" id="number">
+                        <div class="error"></div>
+                    </div>
+                    <button type="button" id="buttonAdd">+</button>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>Zadanie 5</title>
+    <style>
+        #container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        #container>div{
+            background-color: #cdf;
+            padding: 1em;
+            width: 200px;
+            margin: 2em;
+            flex-basis: 18%;
+            flex-grow: 1;
+        }
+
+        #container>div>div {
+            width: 100%;
+            height: 300px;
+            overflow: scroll;
+        }
+        h3{
+            overflow-wrap: anywhere;
+            display: inline-block;
+            min-height: 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- a). wyświetli na stronie tylko miasta z województwa małopolskiego  -->
+    <div id="container">
+        <div>
+            <h3>Miasta Małopolski</h3>
+            <div>
+                <p id="pa"></p>
+            </div>
+        </div>
+        <div>
+            <h3>Miasta z dwoma 'a' w nazwie</h3>
+            <div>
+                <p id="pb"></p>
+            </div>
+        </div>
+        <div>
+            <h3>Piąte najgęściej zaludnione miasto</h3>
+            <div>
+                <p id="pc"></p>
+            </div>
+        </div>
+        <div>
+            <h3>Dodane city do nazwy</h3>
+            <div>
+                <p id="pd"></p>
+            </div>
+        </div>
+        <div>
+            <h3>Więcej miast poniżej czy powyżej 80000 mieszkańców?</h3>
+            <div>
+                <p id="pe"></p>
+            </div>
+        </div>
+        <div>
+            <h3>Średnia powierzchnia miast z powiatów na "P"</h3>
+            <div>
+                <p id="pf"></p>
+            </div>
+        </div>
+        <div>
+            <h3>Miasta z pomorskiego większe od 5000 osób / wszystkie z pomorza</h3>
+            <div>
+                <p id="pg"></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
